@@ -1,0 +1,127 @@
+body{background-color: #555;}
+
+.headBar{
+  display: flex;
+  background-color: #aaa;
+  height: 100px;
+  font-family: Montserrat;
+}
+
+.sideBar{
+  display: flex;
+  flex-direction: column;
+  background-color: #bbb;
+  width: 16%;
+}
+
+.main{
+  background-color: #999;
+  width: 84%;
+  display: flex;
+  overflow: hidden;
+}
+
+.wrapper{
+  display: flex;
+  height: 80vh;
+}
+
+.player-section{
+  display: grid;
+  margin: 1rem;
+  grid-template-columns: repeat(3,150px);  /* 3 columns */
+  grid-template-rows: repeat(2,200px); /* 3 rows  */
+  grid-gap: 10px 10px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+}
+
+.card{
+  border:thin gray solid;
+  padding: 10px;
+  background-color: #bbb;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.card > h1{
+  font-family: Montserrat, Arial;
+  margin: 0 auto 0 auto;
+  font-size: 1rem;
+}
+
+.propic{
+  width: 100px;
+  aspect-ratio: 1;
+  margin: 1rem auto 1rem auto;
+  border-radius: 5px;
+}
+
+ct-pgn-viewer {
+  margin-top: 4rem;
+}
+
+.ct-pgn-viewer move-list .ct-move-list-container{
+  height: auto;
+}
+
+.selected{
+  background-color: #0a0;
+}
+
+.info{
+  display: flex;
+}
+
+.info > * {
+  margin: 0.5rem;
+  margin-top: 2rem;
+  font-family: Montserrat;
+  font-size: 1.4rem;
+}
+
+.gameLink{
+  font-weight: bold;
+}
+
+game-header{
+  display: none;
+}
+
+move-list{}
+
+.ct-move{
+  font-size: 10px;
+}
+
+.ct-move-list-container{
+  display: none;
+}
+
+.score, .round{
+  margin: 1rem;
+}
+
+.skip, .guess, .newGame{
+  width: 180px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin: 2rem auto 0 auto;
+}
+
+.skip{
+  background-color: #fd0;
+}
+
+.guess{
+  background-color: #6d0;
+}
+
+.credits{
+    position: absolute;
+    right: 1rem;
+}
+
+.over{
+  color: gold;
+}

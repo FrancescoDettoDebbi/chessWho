@@ -1,0 +1,96 @@
+body{background-color: #999;}
+
+.playersSection{
+  display: flex;
+  justify-content: center;
+  border: 4px dotted #ccc;
+  margin: auto 1rem;
+  height: 300px;
+}
+
+.card{
+  background-color: #bbb;
+  height: 200px;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 1rem;
+  border: 4px solid #fafafa;
+}
+
+.card > h1{
+  font-family: Montserrat, Arial;
+  margin: 0 auto 0 auto;
+  font-size: 1rem;
+}
+
+.propic{
+  width: 100px;
+  margin: 1rem auto 1rem auto;
+  border-radius: 5px;
+}
+
+.searchBar, .submitButton{
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-left: auto;
+  margin-bottom: .5rem;
+  margin-right: auto;
+}
+
+.searchBar{
+  font-family: Montserrat, Arial;
+  font-size: 1.4rem;
+  width: 200px;
+  text-align: center;
+}
+
+.submitButton, .trash{
+  font-family: Montserrat, Arial;
+  font-weight: bold;
+  width: 140px;
+  border-radius: 5px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+}
+
+.del{
+  background-color: #ff1f1f;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  margin: 3px auto -10px auto;
+  padding: 2px;
+}
+
+.trash{
+  background-color: #f33;
+  border: 3px solid #500;
+  padding: 1rem;
+}
+
+.preset{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60vw;
+  margin: auto;
+}
+
+.termination{
+  display: block;
+  margin: auto;
+}
+
+.green{
+  background-color: #3f3;
+  border: 3px solid #050;
+}

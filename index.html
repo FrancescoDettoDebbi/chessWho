@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Who</title>
+    <link rel="icon" type="image/x-icon" href="/logo/chessWho.ico">
+    <link href="https://c2a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.vers1.css" media="all" rel="stylesheet" crossorigin>
+<script defer language="javascript" src="https://c1a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.bundle.vers1.js" crossorigin></script>
+
+<link
+href="https://c1a.chesstempo.com/fonts/MaterialIcons-Regular.woff2"
+rel="stylesheet" crossorigin>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="headBar">
+        <h1 class="score"> Score: 0 / 0</h1>
+        <div class="info">
+            <h1 class="white"></h1>
+            <h1 class="black"></h1>
+            <h1 class="time"></h1>
+            <a class="gameLink" href="#" target="_blank"></a>
+        </div>
+        <pre class="credits">
+                <img src="logo/chessWho.png" height="70"><a href="https://www.chess.com"> Chess.com </a> & <a href="https://chesstempo.com/"> Chess Tempo </a>
+                        made this website possible.
+
+        </pre>
+    </div>
+    <div class="wrapper">
+        <div class="sideBar">
+            <button class="guess" onclick="guess()"> Guess </button>
+<!--            <button class="skip" onclick="loadGame()"> Skip </button>-->
+            <button class="newGame" onclick="newGame()"> New Game </button>
+        </div>
+        <div class="main">
+            <div class="player-section">
+
+            </div>
+            <ct-pgn-viewer id="ct-1">
+                1.e4
+            </ct-pgn-viewer>
+        </div>
+    </div>
+<script src="js/index.js"></script>
+</body>
+</html>

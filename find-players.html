@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find</title>
+    <link rel="icon" type="image/x-icon" href="/logo/chessWho.ico">
+    <link rel="stylesheet" href="css/find-players.css">
+</head>
+<body>
+<div class="header">
+    <input type="text" id="username" name="username" class="searchBar" placeholder="insert username">
+    <button onclick="submitPlayer()" class="submitButton"> add player </button>
+</div>
+<div class="playersSection"></div>
+<div class="header">
+    <div class="preset">
+    </div>
+    <div class="termination">
+        <button class="trash" onclick="trash()"> Trash </button>
+        <button class="submitButton green" onclick="carica()"> Start Game </button>
+    </div>
+</div>
+<script src="js/find-players.js"></script>
+</body>
+</html>
